@@ -32,7 +32,7 @@ class GalleryFragment : Fragment() {
 
         val textView: TextView = binding.textGallery
         textView.setOnClickListener {
-            findNavController().navigate(R.id.action_nav_gallery_to_listFragment)
+            findNavController().navigate(R.id.nav_category)
         }
         galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
